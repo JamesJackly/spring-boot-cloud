@@ -1,6 +1,7 @@
 eureka:
   instance:
     hostname: registry
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}  # 将Instance ID设置成 appName:IP:端口的形式
     prefer-ip-address: true
   client:
     service-url:
