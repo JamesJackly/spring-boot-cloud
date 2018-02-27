@@ -40,4 +40,4 @@ authserver:
 security:
   oauth2:
     resource:
-      user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current
+      user-info-uri: http://192.168.6.133:${authserver.port}${authserver.contextPath}/current
