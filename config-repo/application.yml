@@ -5,7 +5,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.6.133:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@192.168.1.35:8761/eureka/
 
 hystrix:
   command:
@@ -40,4 +40,4 @@ authserver:
 security:
   oauth2:
     resource:
-      user-info-uri: http://192.168.6.133:${authserver.port}${authserver.contextPath}/current
+      user-info-uri: http://192.168.1.35:${authserver.port}${authserver.contextPath}/current
